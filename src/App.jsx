@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 
+import AboutImages from "./components/AboutImages"
+import AboutText from "./components/AboutText"
 import BookingSection from "./components/BookingSection"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
@@ -9,7 +11,7 @@ function App() {
 
   return (
     <>
-      <header className="bg-[url(./assets/images/header.jpg)] bg-cover bg-center h-screen relative before:absolute before:bg-[#0202204f] before:w-full before:h-full" id="home">
+      <header className="bg-[url('./assets/images/header.jpg')] bg-cover bg-center h-screen relative before:absolute before:bg-[#0202204f] before:w-full before:h-full" id="home">
         <div className="h-[70px] bg-darkblue relative">
           <Navbar/>
         </div>
@@ -22,8 +24,9 @@ function App() {
         <BookingSection/>
       </div>
       <main>
-        <section className="h-screen" id="about">
-          <h1 className="text-7xl text-center">About section here</h1>
+        <section className="flex justify-end h-screen pt-24 px-1 relative" id="about">
+          <AboutImages/>
+          <AboutText/>
         </section>
 
         <section className="h-screen" id="room">

@@ -3,5 +3,6 @@
 
 @theme{
     --color-darkblue: #020220;
-    --color-amber-400: oklch(85.2% 0.199 91.936);
+    --color-amber-400: #FBCA08;
+    --shadow-lightshadow: ;
 }
