@@ -3,8 +3,12 @@
 import AboutImages from "./components/AboutImages"
 import AboutText from "./components/AboutText"
 import BookingSection from "./components/BookingSection"
+import CardPrice from "./components/CardPrice"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import RoomOne from "./assets/images/room-1.jpg"
+import RoomTwo from "./assets/images/room-2.jpg"
+import RoomThree from "./assets/images/room-3.jpg"
 
 
 function App() {
@@ -29,8 +33,31 @@ function App() {
           <AboutText/>
         </section>
 
-        <section className="h-screen" id="room">
-          <h1 className="text-7xl text-center">Room section</h1>
+        <section className="h-screen mt-24" id="room">
+          <h1 className="text-2xl text-center">Rooms</h1>
+          <h2 className="text-4xl font-bold text-center">Hand Picked Rooms</h2>
+          <div className="mt-12 flex items-center justify-evenly">
+            <CardPrice
+              img={RoomOne}
+              title="Deluxe suite"
+              description="Well-appointed rooms designed for guests who desire a more."
+              price="$399/night"
+            />
+            <CardPrice
+              img={RoomTwo}
+              title="Family Suite"
+              description="Consist of multiple rooms and a common living area."
+              price="$599/night"
+            />
+            <CardPrice
+              img={RoomThree}
+              title="Luxury Penthouse"
+              description="Top-tier accommodations usually on the highest floors of a
+                hotel."
+              price="$799/night"
+            />
+          </div>
+
         </section>
 
         <section className="h-screen" id="features">
