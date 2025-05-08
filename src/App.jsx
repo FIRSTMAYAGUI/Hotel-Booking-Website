@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar"
 import RoomOne from "./assets/images/room-1.jpg"
 import RoomTwo from "./assets/images/room-2.jpg"
 import RoomThree from "./assets/images/room-3.jpg"
+import IntroVideo from "./components/IntroVideo"
 
 
 function App() {
@@ -57,7 +58,11 @@ function App() {
               price="$799/night"
             />
           </div>
+          
+        </section>
 
+        <section className="h-[70vh] relative">
+          <IntroVideo/>
         </section>
 
         <section className="h-screen" id="features">
